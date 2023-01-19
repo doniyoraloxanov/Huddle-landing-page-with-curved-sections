@@ -33,7 +33,7 @@
 /******************************/
 
 .section-hero {
-  padding: 9.6rem 6.4rem 6.4rem 6.4rem;
+  padding: 9.6rem 0rem 6.4rem 0rem;
 }
 .hero {
   text-align: center;
@@ -121,8 +121,13 @@
 }
 
 .feature-one {
-  background-image: url(images/bg-section-top-desktop-1.svg);
-  background-size: contain;
+  background-image: linear-gradient(
+      rgba(245, 250, 255, 0.6),
+      rgba(245, 250, 255, 0.6)
+    ),
+    url(images/bg-section-bottom-desktop-2.svg);
+
+  background-size: cover;
   padding: 9.4rem 6.4rem 9.4rem 6.4rem;
   margin-bottom: 4.4rem;
 }
@@ -135,7 +140,11 @@
 }
 
 .feature-three {
-  background-image: url(images/bg-section-bottom-desktop-2.svg);
+  background-image: linear-gradient(
+      rgba(245, 250, 255, 0.6),
+      rgba(245, 250, 255, 0.6)
+    ),
+    url(images/bg-section-bottom-desktop-2.svg);
   padding: 9.4rem 6.4rem 9.4rem 6.4rem;
   margin-bottom: 4.4rem;
 }
@@ -173,10 +182,78 @@
 /******************************/
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 8rem 3.2rem 9.4rem 3.2rem;
+  display: grid;
 }
 
 .grid-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.logo-col {
+  width: 33%;
+}
+.footer-logo {
+  margin-bottom: 1.2rem;
+}
+.footer-text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+.address-col {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+}
+.footer-link {
+  color: #333;
+  text-decoration: none;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+}
+.footer-icon {
+  width: 6.5rem;
+}
+
+/* NEWSLETTER COL */
+.newsletter-col {
+  width: 47%;
+}
+.newsletter-heading {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.newsletter-text {
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.cta-form {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.cta-form input {
+  padding: 0.6rem;
+  width: 250px;
+}
+
+.cta-btn {
+  padding: 0.8rem 2.4rem;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  border-radius: 9px;
 }
