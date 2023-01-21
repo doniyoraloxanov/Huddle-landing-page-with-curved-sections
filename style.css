@@ -201,6 +201,7 @@
   font-size: 0.8rem;
   line-height: 1.5;
   margin-bottom: 1.2rem;
+  color: hsl(207, 100%, 98%);
 }
 .address-col {
   list-style: none;
@@ -212,6 +213,7 @@
 .footer-link {
   color: #333;
   text-decoration: none;
+  color: hsl(207, 100%, 98%);
 }
 .social-links {
   list-style: none;
@@ -222,6 +224,7 @@
 }
 .footer-icon {
   width: 6.5rem;
+  color: hsl(207, 100%, 98%);
 }
 
 /* NEWSLETTER COL */
@@ -232,11 +235,13 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
+  color: hsl(207, 100%, 98%);
 }
 .newsletter-text {
   line-height: 1.5;
   margin-bottom: 1.2rem;
   font-size: 0.8rem;
+  color: hsl(207, 100%, 98%);
 }
 
 .cta-form {
@@ -256,4 +261,12 @@
   background-color: hsl(322, 100%, 66%);
   color: #fff;
   border-radius: 9px;
+}
+
+.bg-image {
+  background-image: url(images/bg-footer-top-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 300px;
+  padding-bottom: 100px;
 }
